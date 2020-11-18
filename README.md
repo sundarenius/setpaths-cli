@@ -1,6 +1,8 @@
 # setpaths-cli
 A CLI command to set folder structures for development.
 
+This will create a development folder structure in ${your_home_directory}/Documents/dev
+
 ## How to
 ```
  1. npm i -g @hakansundstrom/setpaths-cli

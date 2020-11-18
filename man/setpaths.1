@@ -1,14 +1,21 @@
+# setpaths-cli
 A CLI command to set folder structures for development.
 
-Execute this by entering 'node ${path}/setpaths'. 
+## How to
+```
+ 1. npm i -g @hakansundstrom/setpaths-cli
+ 2. run 'setpaths createfolders' from you terminal.
+ 3. Copy the generated aliases into your .zshrc or .bashrc file via a texteditor via 'nano ~/.zshrc' or 'vim ~/.zshrc'
+ 4. Save to file. (Read about 'nano' or 'vim' editor if you dont know how write to file.) nano is the most beginner friendly.
+ 4. Done! Try putting in something like 'p.dev' or 'p.sandbox' or 'p.node' to terminal, all paths have these shortcuts now.
+```
 
-Or you can make this global in /usr/local/bin/ by copying to that path wioth 'cp'
-command and make it executable with 'sudo chmod 755 /usr/local/bin/setpaths'
+You can also fork this from github to a custom folder.
 
-You can also make this global available with ```npm link```.
+Execute this by entering 'node ${path-to-this-folder}/setpaths'. 
 
-Customise you folder structure and paths in the fullPaths object as you'd like.
+Customise your folder structure and paths in the fullPaths object as you'd like.
 
-Requirements:
+## Requirements:
 Node
 MacOS or Linux
