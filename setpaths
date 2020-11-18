@@ -11,11 +11,12 @@ console.log('To make this work. Trigger this script with "createfolders" as pass
 
 // Folder structure
 // dev
-//   bin
-//   production
+//   bin # Executables
+//   production # Live projects
 //   debugging
-//   sandbox
-//   showcase
+//   sandbox # Just for learning and playing around.
+//   showcase # Showcase your skills repos.
+//   work # Your work related repos
 //     git
 //     docker
 //     desktop
