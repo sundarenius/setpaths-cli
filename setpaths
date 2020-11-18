@@ -15,6 +15,10 @@ console.log('To make this work. Trigger this script with "createfolders" as pass
 //   production
 //   debugging
 //   sandbox
+//     git
+//     docker
+//     desktop
+//     mobile
 //     web
 //       frontend
 //       backend
@@ -38,6 +42,9 @@ const fullPaths = {
   debugging: 'dev/debugging',
   sandbox: 'dev/sandbox',
   web: 'dev/sandbox/web',
+  docker: 'dev/sandbox/docker',
+  desktop: 'dev/sandbox/desktop',
+  mobile: 'dev/sandbox/mobile',
   frontend: 'dev/sandbox/web/frontend',
   backend: 'dev/sandbox/web/backend',
   fullstack: 'dev/sandbox/web/fullstack',
