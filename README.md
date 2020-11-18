@@ -1,7 +1,7 @@
 # setpaths-cli
 A CLI command to set folder structures for development.
 
-Clone this file to a custom folder.
+Clone this to a custom folder.
 
 Execute this by entering 'node ${path}/setpaths'. 
 
