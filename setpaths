@@ -75,10 +75,16 @@ const createFolderStructure = () => {
 
 const addToZshRC = () => {
   console.log('Add following lines to local .zshrc file')
+  console.log('# PATH SHORTCUTS')
   const prefix = 'p.'
   for (let i in fullPaths) {
    console.log(`alias ${prefix}${i}="cd ${basicPath}${fullPaths[i]} && pwd && echo Welcome to '${i}' development folder. Make some awesomeness. && echo && ls"`) 
   }
+  console.log('') // New line
+  console.log('# GOOD TO HAVE SHORCUTS') // New line
+  console.log('alias g.new-modules="echo Deleting local node modules and package-lock.json and making a new install && rm -rf ./node_modules ./package-lock.json && npm install"')
+  console.log('alias g.weather="curl wittr.in"')
+  console.log('alias g.clear-cache="sudo purge && echo Clearing RAM and disk cache memory with (sudo purge) command"')
 }
 
 if (arg === 'createfolders') {
