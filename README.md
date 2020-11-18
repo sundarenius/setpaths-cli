@@ -1,7 +1,14 @@
 # setpaths-cli
 A CLI command to set folder structures for development.
 
-Clone this to a custom folder.
+## How to
+```
+ 1. npm i -g @hakansundstrom/setpaths-cli
+ 2. run `setpaths createfolder`
+ 3. Done!
+```
+
+You can also fork this from github to a custom folder.
 
 Execute this by entering 'node ${path-to-this-folder}/setpaths'. 
 
