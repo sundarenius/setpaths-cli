@@ -1,0 +1,93 @@
+#!/bin/env node
+
+const fs = require('fs')
+const homedir = require('os').homedir()
+const { exec } = require("child_process");
+const arg = process.argv[2]
+
+const basicPath = `${homedir}/Documents/`
+
+const allPaths = [ 'dev', 'bin', 'production', 'sandbox', 'web', 'frontend', 'backend', 'fullstack', 'rdm', 'langs', 'c', 'c++', 'c#', 'java', 'node', 'python' ]
+
+console.log('To make this work. Trigger this script with "createfolders" as passed in argument')
+
+// Folder structure
+// dev
+//   bin
+//   production
+//   sandbox
+//     web
+//       frontend
+//       backend
+//       fullstack
+//     rdm
+//     langs
+//       c
+//       'c++'
+//       'c#'
+//       java
+//       python
+//       node
+
+const fullPaths = {
+  dev: 'dev',
+  bin: 'dev/bin',
+  production: 'dev/production',
+  work: 'dev/work',
+  sandbox: 'dev/sandbox',
+  web: 'dev/sandbox/web',
+  frontend: 'dev/sandbox/web/frontend',
+  backend: 'dev/sandbox/web/backend',
+  fullstack: 'dev/sandbox/web/fullstack',
+  rdm: 'dev/sandbox/rdm',
+  langs: 'dev/sandbox/langs',
+  c: 'dev/sandbox/langs/c',
+  'c++': 'dev/sandbox/langs/c++',
+  'c#': 'dev/sandbox/langs/c#',
+  java: 'dev/sandbox/langs/java',
+  python: 'dev/sandbox/langs/python',
+  node: 'dev/sandbox/langs/node'
+}
+
+const createFolder = (path) => {
+  try {
+    const dir = `${basicPath}/${path}`
+    fs.mkdirSync(dir)
+    console.log(`${dir} was created!`)
+  } catch (err) {
+    console.log('Folder already exists')
+  }
+}
+
+const createFolderStructure = () => {
+  createFolder(fullPaths.dev)
+  createFolder(fullPaths.bin)
+  createFolder(fullPaths.production)
+  createFolder(fullPaths.work)
+  createFolder(fullPaths.sandbox)
+  createFolder(fullPaths.web)
+  createFolder(fullPaths.frontend)
+  createFolder(fullPaths.backend)
+  createFolder(fullPaths.fullstack)
+  createFolder(fullPaths.rdm)
+  createFolder(fullPaths.langs)
+  createFolder(fullPaths.c)
+  createFolder(fullPaths['c++'])
+  createFolder(fullPaths['c#'])
+  createFolder(fullPaths.java)
+  createFolder(fullPaths.python)
+  createFolder(fullPaths.node)
+}
+
+const addToZshRC = () => {
+  console.log('Add following lines to local .zshrc file')
+  const prefix = 'p.'
+  for (let i in fullPaths) {
+   console.log(`alias ${prefix}${i}="cd ${basicPath}${fullPaths[i]} && pwd && echo Welcome to ${i} folder. Make some awesomeness. && echo && ls"`) 
+  }
+}
+
+if (arg === 'createfolders') {
+   createFolderStructure()
+  addToZshRC()
+}
