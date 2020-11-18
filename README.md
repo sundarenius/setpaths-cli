@@ -1,5 +1,5 @@
 # setpaths-cli
-A CLI command to set folder structures for development.
+A CLI command to set up a folder structure for development.
 
 This will create a development folder structure in ${your_home_directory}/Documents/dev
 
