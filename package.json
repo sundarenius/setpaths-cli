@@ -1,5 +1,5 @@
 {
-  "name": "setpaths-cli",
+  "name": "@hakansundstrom/setpaths-cli",
   "version": "1.0.0",
   "description": "Setup development folder structure in ${user/home}/Documents with shortcut commands",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sundarenius/setpaths-cli.git"
+    "url": "https://github.com/Sundarenius/setpaths-cli"
   },
   "license": "ISC",
   "bugs": {
