@@ -27,6 +27,7 @@ console.log('To make this work. Trigger this script with "createfolders" as pass
 //       'c#'
 //       java
 //       python
+//         python3
 //       node
 
 const fullPaths = {
@@ -64,7 +65,11 @@ const createFolder = (path) => {
 
 const createFolderStructure = () => {
   for (let i in fullPaths) {
-    createFolder(fullPaths[i])
+    try {
+      createFolder(fullPaths[i])
+    } catch (err) {
+      console.log(`File already exists, ${err}`)
+    }
   }
 }
 
@@ -77,6 +82,6 @@ const addToZshRC = () => {
 }
 
 if (arg === 'createfolders') {
-   createFolderStructure()
+  createFolderStructure()
   addToZshRC()
 }
