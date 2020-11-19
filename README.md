@@ -7,10 +7,12 @@ This will create a development folder structure in ${your_home_directory}/Docume
 ```
  1. npm i -g @hakansundstrom/setpaths-cli
  2. run 'setpaths createfolders' from your terminal.
- 3. Copy the generated aliases into your .zshrc or .bashrc file via a texteditor via 'nano ~/.zshrc' or 'vim ~/.zshrc'
+ 3. Copy the generated aliases into your .zshrc or .bashrc file via a texteditor via 'nano ~/.zshrc' or 'vim ~/.zshrc'*
  4. Save to file. (Read about 'nano' or 'vim' editor if you dont know how to write to file.) nano is the most beginner friendly.
  4. Done! Write something like 'p.dev' or 'p.sandbox' or 'p.node' to terminal, all paths have these shortcuts now.
 ```
+
+Step 3 explanation. Depending on your shell, this should either be pasted via `nano ~/.zshrc` or `nano ~/.bashrc`, here I use nano text editor for simplicity. Write `echo "$SHELL"` to see what shell you're using. If output is something like `/bin/zsh` you are using zsh and same goes for bash or other shells.
 
 All paths are accesible from terminal via 'p.{folderName}'.
 The terminal will also display what folders and files are in there.
