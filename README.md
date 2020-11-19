@@ -9,8 +9,11 @@ This will create a development folder structure in ${your_home_directory}/Docume
  2. run 'setpaths createfolders' from your terminal.
  3. Copy the generated aliases into your .zshrc or .bashrc file via a texteditor via 'nano ~/.zshrc' or 'vim ~/.zshrc'
  4. Save to file. (Read about 'nano' or 'vim' editor if you dont know how to write to file.) nano is the most beginner friendly.
- 4. Done! Try putting in something like 'p.dev' or 'p.sandbox' or 'p.node' to terminal, all paths have these shortcuts now.
+ 4. Done! Write something like 'p.dev' or 'p.sandbox' or 'p.node' to terminal, all paths have these shortcuts now.
 ```
+
+All paths are accesible from terminal via 'p.{folderName}'.
+The terminal will also display what folders and files are in there.
 
 You can also fork this from github to a custom folder.
 
