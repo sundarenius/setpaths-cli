@@ -18,6 +18,35 @@ Execute this by entering 'node ${path-to-this-folder}/setpaths'.
 
 Customise your folder structure and paths in the fullPaths object as you'd like.
 
+## The generated folder structure tree will look like this
+````
+dev
+  bin # Executables
+  production # Live projects
+  debugging
+  showcase # Showcase your skills repos
+  work # Your work related repos
+  sandbox # Just for learning and playing around
+    git
+    docker
+    desktop # Desktop apps development
+    mobile # Mobile apps development
+    web
+      frontend
+      backend
+      fullstack
+    rdm # (Random)
+      github # Random specific github repos
+    langs
+      c
+      c++
+      c#
+      java
+      python
+        python3
+      node
+````
+
 ## Requirements:
 Node
 MacOS or Linux

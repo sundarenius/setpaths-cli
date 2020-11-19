@@ -13,9 +13,9 @@ console.log('To make this work. Trigger this script with "createfolders" as pass
 //   bin # Executables
 //   production # Live projects
 //   debugging
-//   sandbox # Just for learning and playing around.
-//   showcase # Showcase your skills repos.
+//   showcase # Showcase your skills repos
 //   work # Your work related repos
+//   sandbox # Just for learning and playing around
 //     git
 //     docker
 //     desktop
@@ -24,8 +24,8 @@ console.log('To make this work. Trigger this script with "createfolders" as pass
 //       frontend
 //       backend
 //       fullstack
-//     rdm
-//       github
+//     rdm # (Random)
+//       github # Random specific github repos
 //     langs
 //       c
 //       'c++'
@@ -44,6 +44,7 @@ const fullPaths = {
   debugging: 'dev/debugging',
   sandbox: 'dev/sandbox',
   web: 'dev/sandbox/web',
+  git: 'dev/sandbox/git',
   docker: 'dev/sandbox/docker',
   desktop: 'dev/sandbox/desktop',
   mobile: 'dev/sandbox/mobile',
