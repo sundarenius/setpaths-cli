@@ -5,7 +5,7 @@ This will create a development folder structure in ${your_home_directory}/Docume
 
 ## How to
 ```
- 1. npm i -g @hakansundstrom/setpaths-cli
+ 1. sudo npm i -g @hakansundstrom/setpaths-cli
  2. run 'setpaths createfolders' from your terminal.
  3. Copy the generated aliases into your .zshrc or .bashrc file via a texteditor via 'nano ~/.zshrc' or 'vim ~/.zshrc'*
  4. Save to file. (Read about 'nano' or 'vim' editor if you dont know how to write to file.) nano is the most beginner friendly.
