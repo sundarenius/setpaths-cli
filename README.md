@@ -31,6 +31,7 @@ dev
   debugging
   showcase # Showcase your skills repos
   work # Your work related repos
+  docs # Random dev. specific documents
   sandbox # Just for learning and playing around
     git
     docker
@@ -42,7 +43,7 @@ dev
       fullstack
     rdm # (Random)
       github # Random specific github repos
-    langs
+    langs # Practice/play with different programming languages
       c
       c++
       c#
