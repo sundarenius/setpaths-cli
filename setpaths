@@ -41,7 +41,7 @@ const fullPaths = {
   bin: 'dev/bin',
   production: 'dev/production',
   work: 'dev/work',
-  docs 'dev/docs',
+  docs: 'dev/docs',
   showcase: 'dev/showcase',
   debugging: 'dev/debugging',
   sandbox: 'dev/sandbox',
