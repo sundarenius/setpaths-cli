@@ -6,7 +6,7 @@ const arg = process.argv[2]
 
 const basicPath = `${homedir}/Documents/`
 
-console.log('To make this work. Trigger this script with "createfolders" as passed in argument')
+console.log('To make this work. Run this script with the command "setpaths createfolders"')
 
 // Folder structure
 // dev
