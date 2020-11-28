@@ -25,32 +25,36 @@ Customise your folder structure and paths in the fullPaths object as you'd like.
 
 ## The generated folder structure tree will look like this
 ````
-dev
-  bin # Executables
-  production # Live projects
-  debugging
-  showcase # Showcase your skills repos
-  work # Your work related repos
-  docs # Random dev. specific documents
-  sandbox # Just for learning and playing around
-    git
-    docker
-    desktop # Desktop apps development
-    mobile # Mobile apps development
-    web
-      frontend
-      backend
-      fullstack
-    rdm # (Random)
-      github # Random specific github repos
-    langs # Practice/play with different programming languages
-      c
-      c++
-      c#
-      java
-      python
-        python3
-      node
+ Folder structure:
+ dev
+   bin # Executables
+   production # Live projects
+   debugging
+   showcase # Showcase your skills repos
+   work # Your work related repos
+   docs # Random dev. specific documents
+   sandbox # Just for learning and playing around
+     git
+     docker
+     desktop
+     mobile
+     web
+       frontend
+       backend
+       fullstack
+     rdm # (Random)
+       github # Random specific github repos
+     langs # Practice/play with different programming languages
+       c
+       c++
+       c#
+       java
+       python
+         python3
+       node
+       objective-c
+       swift
+       assembly
 ````
 
 ## Requirements:
