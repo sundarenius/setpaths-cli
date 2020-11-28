@@ -34,6 +34,7 @@ console.log('To make this work. Trigger this script with "createfolders" as pass
 //       python
 //         python3
 //       node
+//       assembly
 
 const fullPaths = {
   dev: 'dev',
@@ -60,7 +61,8 @@ const fullPaths = {
   java: 'dev/sandbox/langs/java',
   python: 'dev/sandbox/langs/python',
   python3: 'dev/sandbox/langs/python/python3',
-  node: 'dev/sandbox/langs/node'
+  node: 'dev/sandbox/langs/node',
+  assembly: 'dev/sandbox/langs/assembly'
 }
 
 const createFolder = (path) => {
