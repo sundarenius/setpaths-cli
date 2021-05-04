@@ -55,6 +55,8 @@ Customise your folder structure and paths in the fullPaths object as you'd like.
        objective-c
        swift
        assembly
+       javascript
+       typescript
 ````
 
 ## Requirements:

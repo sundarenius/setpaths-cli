@@ -38,6 +38,8 @@ console.log('To make this work. Run this script with the command "setpaths creat
 //       objective-c
 //       swift
 //       assembly
+//       javascript
+//       typescript
 
 const fullPaths = {
   dev: 'dev',
@@ -68,7 +70,9 @@ const fullPaths = {
   node: 'dev/sandbox/langs/node',
   assembly: 'dev/sandbox/langs/assembly',
   'objective-c': 'dev/sandbox/langs/objective-c',
-  swift: 'dev/sandbox/langs/swift'
+  swift: 'dev/sandbox/langs/swift',
+  javascript: 'dev/sandbox/langs/javascript',
+  typescript: 'dev/sandbox/langs/typescript'
 }
 
 const createFolder = (path) => {
