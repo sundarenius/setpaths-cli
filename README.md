@@ -57,6 +57,7 @@ Customise your folder structure and paths in the fullPaths object as you'd like.
        assembly
        javascript
        typescript
+       php
 ````
 
 ## Requirements:
