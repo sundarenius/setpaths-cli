@@ -23,6 +23,10 @@ Execute this by entering 'node ${path-to-this-folder}/setpaths'.
 
 Customise your folder structure and paths in the fullPaths object as you'd like.
 
+## Maintainers
+This project was built by Håkan Sundström and is maintained by him.
+https://github.com/Sundarenius
+
 ## The generated folder structure tree will look like this
 ````
  Folder structure:
