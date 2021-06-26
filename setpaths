@@ -41,6 +41,8 @@ console.log('To make this work. Run this script with the command "setpaths creat
 //       javascript
 //       typescript
 //       php
+//       kotlin
+//       scala
 
 const fullPaths = {
   dev: 'dev',
@@ -74,7 +76,9 @@ const fullPaths = {
   swift: 'dev/sandbox/langs/swift',
   javascript: 'dev/sandbox/langs/javascript',
   typescript: 'dev/sandbox/langs/typescript',
-  php: 'dev/sandbox/langs/php'
+  php: 'dev/sandbox/langs/php',
+  kotlin: 'dev/sandbox/langs/kotlin',
+  scala: 'dev/sandbox/langs/scala'
 }
 
 const createFolder = (path) => {

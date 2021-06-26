@@ -62,6 +62,8 @@ https://github.com/Sundarenius
        javascript
        typescript
        php
+       kotlin
+       scala
 ````
 
 ## Requirements:
