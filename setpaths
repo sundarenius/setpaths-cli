@@ -113,6 +113,7 @@ const addToZshRC = () => {
   console.log('') // New line
   console.log('# GOOD TO HAVE SHORCUTS') // New line
   console.log('alias g.new-modules="echo Deleting local node modules and package-lock.json and making a new install && rm -rf ./node_modules ./package-lock.json && npm install"')
+  console.log('alias g.new-yarn="echo Deleting local node modules and yarn.lock and making a new install && rm -rf ./node_modules ./yarn.lock && yarn install --force"')
   console.log('alias g.weather="curl wittr.in"')
   console.log('alias g.clear-cache="sudo purge && echo Clearing RAM and disk cache memory with (sudo purge) command"')
   console.log('alias c="clear"')
