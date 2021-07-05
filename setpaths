@@ -103,21 +103,35 @@ const createFolderStructure = () => {
   }
 }
 
-const addToZshRC = () => {
-  console.log('Add following lines to local .zshrc file')
-  console.log('# PATH SHORTCUTS')
+const template = () => {
   const prefix = 'p.'
-  for (let i in fullPaths) {
-   console.log(`alias ${prefix}${i}="cd ${basicPath}${fullPaths[i]} && pwd && echo Welcome to '${i}' development folder. Make some awesomeness. && echo && ls"`) 
-  }
-  console.log('') // New line
-  console.log('# GOOD TO HAVE SHORCUTS') // New line
-  console.log('alias g.new-modules="echo Deleting local node modules and package-lock.json and making a new install && rm -rf ./node_modules ./package-lock.json && npm install"')
-  console.log('alias g.new-yarn="echo Deleting local node modules and yarn.lock and making a new install && rm -rf ./node_modules ./yarn.lock && yarn install --force"')
-  console.log('alias g.weather="curl wittr.in"')
-  console.log('alias g.clear-cache="sudo purge && echo Clearing RAM and disk cache memory with (sudo purge) command"')
-  console.log('alias c="clear"')
-  console.log('alias cl="clear"')
+  return `# PATH SHORTCUTS
+${Object.entries(fullPaths).map(val => {
+    return `alias ${prefix}${val[1]}="cd ${basicPath}${val[0]} && pwd && echo Welcome to '${val[1]}' development folder. Make some awesomeness. && echo && ls"
+`
+  }).join('')}
+# GOOD TO HAVE SHORCUTS
+alias g.new-modules="echo Deleting local node modules and package-lock.json and making a new install && rm -rf ./node_modules ./package-lock.json && npm install"
+alias g.new-yarn="echo Deleting local node modules and yarn.lock and making a new install && rm -rf ./node_modules ./yarn.lock && yarn install --force"
+alias g.weather="curl wittr.in"
+alias g.clear-cache="sudo purge && echo Clearing RAM and disk cache memory with (sudo purge) command"
+alias c="clear"
+alias cl="clear"
+`
+}
+
+const addToZshRC = () => {
+  fs.writeFile(`${homedir}/.zshrc_aliases`, template(), (err) => {
+      // throws an error, you could also catch it here
+      if (err) throw err;
+
+      // success case, the file was saved
+      console.log(`${homedir}/.zshrc_aliases saved!`);
+      console.log(`Add following lines to your ${homedir}/.zshrc`)
+      console.log(`
+# Read aliases from ~/.zshrc_aliases
+source .zshrc_aliases`)
+  });
 }
 
 if (arg === 'createfolders') {
