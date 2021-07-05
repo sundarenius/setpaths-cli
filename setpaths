@@ -11,7 +11,7 @@ console.log('To make this work. Run this script with the command "setpaths creat
 // Folder structure
 // dev
 //   bin # Executables
-//   production # Live projects
+//   projects # Live projects
 //   debugging
 //   showcase # Showcase your skills repos
 //   work # Your work related repos
@@ -48,7 +48,7 @@ console.log('To make this work. Run this script with the command "setpaths creat
 const fullPaths = {
   dev: 'dev',
   bin: 'dev/bin',
-  production: 'dev/production',
+  projects: 'dev/projects',
   work: 'dev/work',
   oss: 'dev/oss',
   docs: 'dev/docs',
