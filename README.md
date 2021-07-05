@@ -7,7 +7,7 @@ This will create a development folder structure in ${your_home_directory}/Docume
 ```
  1. sudo npm i -g @hakansundstrom/setpaths-cli
  2. run 'setpaths createfolders' from your terminal, this will create a .zshrc_aliases in your home folder.
- 3. Add following line to your ${homedir}/.zshrc file: source .zshrc_aliases
+ 3. Add following line to your ${homedir}/.zshrc file: source ~/.zshrc_aliases
  4. Done! Open a new shell and write something like 'p.dev' or 'p.sandbox' or 'p.node' to terminal, all paths have these shortcuts now.
 ```
 

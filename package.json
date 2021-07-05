@@ -1,6 +1,6 @@
 {
   "name": "@hakansundstrom/setpaths-cli",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "description": "Setup development folder structure in ${user/home}/Documents with shortcut commands",
   "main": "index.js",
   "author": "Håkan Sundström <sundarenius@gmail.com>",

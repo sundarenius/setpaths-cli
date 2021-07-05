@@ -130,7 +130,7 @@ const addToZshRC = () => {
       console.log(`Add following lines to your ${homedir}/.zshrc`)
       console.log(`
 # Read aliases from ~/.zshrc_aliases
-source .zshrc_aliases`)
+source ~/.zshrc_aliases`)
   });
 }
 
