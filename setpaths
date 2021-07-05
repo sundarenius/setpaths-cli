@@ -107,7 +107,7 @@ const template = () => {
   const prefix = 'p.'
   return `# PATH SHORTCUTS
 ${Object.entries(fullPaths).map(val => {
-    return `alias ${prefix}${val[1]}="cd ${basicPath}${val[0]} && pwd && echo Welcome to '${val[1]}' development folder. Make some awesomeness. && echo && ls"
+    return `alias ${prefix}${val[0]}="cd ${basicPath}${val[1]} && pwd && echo Welcome to '${val[1]}' development folder. Make some awesomeness. && echo && ls"
 `
   }).join('')}
 # GOOD TO HAVE SHORCUTS
