@@ -35,6 +35,9 @@ https://github.com/Sundarenius
    work # Your work related repos
    oss # Open-source software contributions
    docs # Random dev. specific documents
+   servers # host servers here
+     apache
+     nginx
    sandbox # Just for learning and playing around
      git
      docker
