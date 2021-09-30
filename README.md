@@ -57,6 +57,7 @@ https://github.com/Sundarenius
        objective-c
        swift
        assembly
+       webassembly
        javascript
        typescript
        php
