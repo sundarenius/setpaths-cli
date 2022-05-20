@@ -11,7 +11,7 @@ console.log('To make this work. Run this script with the command "setpaths creat
 // Folder structure
 // dev
 //   bin # Executables
-//   projects # Live projects
+//   projects # Live personal projects
 //   debugging
 //   showcase # Showcase your skills repos
 //   work # Your work related repos

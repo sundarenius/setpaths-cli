@@ -29,7 +29,7 @@ https://github.com/Sundarenius
  Folder structure:
  dev
    bin # Executables
-   projects # Live projects
+   projects # Live personal projects
    debugging
    showcase # Showcase your skills repos
    work # Your work related repos
@@ -43,7 +43,7 @@ https://github.com/Sundarenius
      docker
      desktop
      mobile
-     db
+     db # databases like mongoDB, mySql etc ...
      web
        frontend
        backend
