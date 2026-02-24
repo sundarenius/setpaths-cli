@@ -42,6 +42,7 @@ console.log('To make this work. Run this script with the command "setpaths creat
 //       python
 //         python3
 //       node
+//       go
 //       objective-c
 //       swift
 //       assembly
@@ -86,6 +87,7 @@ const fullPaths = {
   python: 'dev/sandbox/langs/python',
   python3: 'dev/sandbox/langs/python/python3',
   node: 'dev/sandbox/langs/node',
+  go: 'dev/sandbox/langs/go',
   assembly: 'dev/sandbox/langs/assembly',
   webassembly: 'dev/sandbox/langs/webassembly',
   'objective-c': 'dev/sandbox/langs/objective-c',
